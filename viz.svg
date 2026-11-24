@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="603.0" viewBox="0 0 760 603.0" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="601.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Detect Squares — the diagonal partner decides everything</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Add points; Count(q) = axis-aligned squares with q as a corner. Points so far:</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">(3,10), (11,2), (3,2). Query (11,10).</text>
+<line x1="242.0" y1="153.0" x2="516.0" y2="153.0" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="538.0" y1="173.0" x2="538.0" y2="221.0" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="242.0" y1="243.0" x2="516.0" y2="243.0" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="222.0" y1="173.0" x2="222.0" y2="221.0" stroke="#94a3b8" stroke-width="1.6"/>
+<circle cx="222.0" cy="153.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="222.0" y="158.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3,10</text>
+<circle cx="538.0" cy="153.0" r="18" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+<text x="538.0" y="158.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">11,10</text>
+<circle cx="222.0" cy="243.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="222.0" y="248.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3,2</text>
+<circle cx="538.0" cy="243.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="538.0" y="248.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">11,2</text>
+<line x1="24.0" y1="291.0" x2="736.0" y2="291.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="311.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="315.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="316.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Enumerate only DIAGONAL partners of q: any stored point (x,y) with |x−qx| = |y−qy| ≠</text>
+<text x="56.0" y="335.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">0. The other two corners are then FORCED: (x,qy) and (qx,y) — multiply their stored</text>
+<text x="56.0" y="354.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">counts.</text>
+<text x="72.0" y="389.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">query (11,10)</text>
+<rect x="84.0" y="370.0" width="225.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="196.5" y="389.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">diagonal (3,2) → side 8</text>
+<rect x="319.0" y="370.0" width="360.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="499.0" y="389.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">forced corners → (3,10) ✓ and (11,2) ✓</text>
+<rect x="84.0" y="406.0" width="171.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="169.5" y="425.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">count → 1·1·1 = 1</text>
+<line x1="24.0" y1="450.0" x2="736.0" y2="450.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="470.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="474.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="475.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">1 square. Duplicate points multiply counts (hence a count map, not a set). Iterating</text>
+<text x="56.0" y="494.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">diagonals — O(points) per query — beats iterating all corner triples; the</text>
+<text x="56.0" y="513.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">forced-corner lookup is the collapse.</text>
+<text x="72.0" y="548.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">answers</text>
+<rect x="84.0" y="529.0" width="162.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="165.0" y="548.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">Count(11,10) → 1</text>
+<rect x="256.0" y="529.0" width="153.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="332.5" y="548.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">Count(14,8) → 0</text>
+<text x="380.0" y="585.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
